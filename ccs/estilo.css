@@ -7,9 +7,24 @@
     background-color: rgb(34, 34, 34);
 }
 
+.btn-primary{
+    background-color:rgb(120, 110, 211);
+    border-color: rgb(120, 110, 211);
+    transition: all 0.25s ease-in-out;
+}
+
+:not(.btn-check)+.btn:hover{
+    background-color: rgb(120, 110, 211);
+    border-color: rgb(120, 110, 211);
+    transform: scale(0.9);
+}
 
 .text-center{
    color: antiquewhite
+}
+.d-flex {
+    color: antiquewhite;
+
 }
 
 .card-color{
@@ -20,6 +35,11 @@
     margin: 3rem 0rem 3rem 0rem;
 }
 
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: antiquewhite;
+}
 
 
 .consulta{
