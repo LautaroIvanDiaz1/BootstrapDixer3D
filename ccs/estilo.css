@@ -27,15 +27,30 @@
 
 }
 
+.card{
+    text-align: center;
+    overflow: hidden;
+}
+.card img{
+    transition: all 1s ease;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+
 .card-color{
-    background-color: rgb(34, 34, 34)  
+    background-color: rgb(34, 34, 34);
 }
 
 .animacion-productos{
     margin: 3rem 0rem 3rem 0rem;
+    transform: translateZ(1rem);
+    filter:contrast(80%)
 }
-
-
+.animacion-productos:hover{
+    filter: none;
+}
 
 .navbar-expand-lg .navbar-nav .nav-link {
     color: antiquewhite;
