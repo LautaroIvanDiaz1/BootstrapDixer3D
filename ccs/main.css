@@ -1,0 +1,75 @@
+.card-color {
+  background-color: #222222; }
+
+.consulta {
+  color: antiquewhite;
+  text-align: justify;
+  font-size: 20px;
+  margin: 5rem 1rem 2rem 0rem; }
+
+.mapa {
+  color: antiquewhite;
+  text-align: center;
+  font-size: 3rem;
+  margin: 5rem 1rem 2rem 0rem; }
+
+.animacion-productos {
+  margin: 3rem 0rem 3rem 0rem;
+  transform: translateZ(1rem);
+  filter: contrast(80%); }
+  .animacion-productos:hover {
+    filter: none; }
+
+.body {
+  background-color: #222222; }
+
+.bg-color {
+  background-color: #786ed3; }
+
+.text-center {
+  color: antiquewhite; }
+
+.d-flex {
+  color: antiquewhite; }
+
+.btn-primary {
+  background-color: #786ed3;
+  border-color: #786ed3;
+  transition: all 0.25s ease-in-out; }
+
+:not(.btn-check) + .btn:hover {
+  background-color: #786ed3;
+  border-color: #786ed3;
+  transform: scale(0.9); }
+
+.card {
+  text-align: center;
+  overflow: hidden; }
+  .card img {
+    transition: all 1s ease; }
+  .card:hover img {
+    transform: scale(1.1); }
+
+.whatsapp {
+  position: fixed;
+  right: 3rem;
+  bottom: 1rem; }
+  .whatsapp img {
+    width: 1.5rem; }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: antiquewhite; }
+
+/* FOOTER */
+.estiloFooter {
+  background-color: #786ed3;
+  padding: 0.5rem; }
+
+.footerTexto {
+  color: antiquewhite;
+  text-align: justify;
+  font-size: 20px; }
+
+.redesFlotantes img {
+  width: 1.5rem;
+  display: inline; }
