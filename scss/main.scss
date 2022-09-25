@@ -1,0 +1,90 @@
+$colorPrincipal:rgb(34, 34, 34);
+$colorSecundario:rgb(120, 110, 211);
+$colorLetra:antiquewhite;
+
+
+
+
+
+@import "index";
+@import "contacto";
+@import "productos";
+
+.body{
+    background-color: $colorPrincipal;
+}
+
+.bg-color{
+    background-color: $colorSecundario;
+}
+
+.text-center{
+    color: $colorLetra;
+ }
+ .d-flex {
+     color: $colorLetra;
+ 
+ }
+ 
+
+.btn-primary{
+    background-color: $colorSecundario;
+    border-color: $colorSecundario;
+    transition: all 0.25s ease-in-out;
+}
+
+:not(.btn-check)+.btn:hover{
+    background-color: $colorSecundario;
+    border-color: $colorSecundario;
+    transform: scale(0.9);
+}
+
+
+.card{
+    text-align: center;
+    overflow: hidden;
+    img{
+        transition: all 1s ease;
+    }
+    &:hover img{
+        transform: scale(1.1);
+    }
+}
+
+
+.whatsapp{
+    position: fixed;
+    right: 3rem;
+    bottom: 1rem;
+    img{
+        width: 1.5rem;
+    }
+}
+
+
+.navbar-expand-lg{
+     .navbar-nav{ 
+            .nav-link {
+    color: antiquewhite;
+        }
+    }
+}
+
+                    /* FOOTER */
+
+.estiloFooter{
+    background-color:$colorSecundario;
+    padding: 0.5rem;
+}
+.footerTexto{
+    color: antiquewhite;
+    text-align: justify;
+    font-size: 20px;
+}
+.redesFlotantes img{
+    width: 1.5rem;
+    display:inline;
+
+}
+
+

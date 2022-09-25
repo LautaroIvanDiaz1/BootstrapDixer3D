@@ -1,33 +1,33 @@
-.bg-color{
+/*.bg-color{
     background-color: rgb(120, 110, 211);
-}
+}*/
 
 
-.body{
+/*.body{
     background-color: rgb(34, 34, 34);
-}
+}*/
 
-.btn-primary{
+/*.btn-primary{
     background-color:rgb(120, 110, 211);
     border-color: rgb(120, 110, 211);
     transition: all 0.25s ease-in-out;
-}
+}*/
 
-:not(.btn-check)+.btn:hover{
+/*:not(.btn-check)+.btn:hover{
     background-color: rgb(120, 110, 211);
     border-color: rgb(120, 110, 211);
     transform: scale(0.9);
-}
+}*/
 
-.text-center{
+/*.text-center{
    color: antiquewhite
 }
 .d-flex {
     color: antiquewhite;
 
-}
+}*/
 
-.card{
+/*.card{
     text-align: center;
     overflow: hidden;
 }
@@ -37,59 +37,58 @@
 
 .card:hover img{
     transform: scale(1.1);
-}
+}*/
 
-.card-color{
+/*.card-color{
     background-color: rgb(34, 34, 34);
-}
+}*/
 
-.animacion-productos{
+/*.animacion-productos{
     margin: 3rem 0rem 3rem 0rem;
     transform: translateZ(1rem);
     filter:contrast(80%)
 }
 .animacion-productos:hover{
     filter: none;
-}
+}*/
 
-.navbar-expand-lg .navbar-nav .nav-link {
+/*.navbar-expand-lg .navbar-nav .nav-link {
     color: antiquewhite;
-}
+}*/
 
-
-.consulta{
+/*.consulta{
     color: antiquewhite;
     text-align: justify;
     font-size: 20px;
     margin: 5rem 1rem 2rem 0rem;
-}
+}*/
 
-.mapa{
+/*.mapa{
     color: antiquewhite;
     text-align: center;
     font-size: 3rem;
     margin: 5rem 1rem 2rem 0rem  
 }
+*/
 
-
-.estiloFooter{
+/*.estiloFooter{
     background-color:rgb(181, 167, 224);
     padding: 0.5rem;
-}
+}*/
 
 
-.footerTexto{
+/*.footerTexto{
     color: antiquewhite;
     text-align: justify;
     font-size: 20px;
-}
+}*/
 
-.redesFlotantes img{
+/*.redesFlotantes img{
     width: 1.5rem;
     display:inline;
-}
+}*/
 
-.whatsapp img{
+/*.whatsapp img{
     width: 1.5rem;
 }
 
@@ -98,4 +97,4 @@
     position: fixed;
     right: 3rem;
     bottom: 1rem;
-}
+}*/
