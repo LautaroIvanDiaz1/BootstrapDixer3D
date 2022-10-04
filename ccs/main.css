@@ -1,3 +1,8 @@
+/*OPERACIONES*/
+/* .configuracion-contacto{
+    width: ($cajaCompleta/2) +50;
+}
+ */
 .card-color {
   background-color: #222222;
   border-radius: 6px; }
@@ -14,6 +19,9 @@
   font-size: 3rem;
   margin: 5rem 1rem 2rem 0rem; }
 
+/* .configuracion-contacto{
+    width: 500px;
+} */
 .animacion-productos {
   margin: 3rem 0rem 3rem 0rem;
   transform: translateZ(1rem);
@@ -21,8 +29,87 @@
   .animacion-productos:hover {
     filter: none; }
 
+/* CONDICIONALES */
 .body {
   background-color: #222222; }
+
+/* BUCLES */
+.item-1 {
+  width: 200px;
+  height: 50px;
+  background-color: coral;
+  border: 1px solid black; }
+
+.item-2 {
+  width: 400px;
+  height: 50px;
+  background-color: coral;
+  border: 1px solid black; }
+
+.item-3 {
+  width: 600px;
+  height: 50px;
+  background-color: coral;
+  border: 1px solid black; }
+
+/* EACH */
+.animal {
+  background-image: url("../multimedia/animal.png"); }
+
+.animal {
+  background-image: url("../multimedia/animal.png"); }
+
+.animal {
+  background-image: url("../multimedia/animal.png"); }
+
+/* MAPS */
+.titulo, .subtitulo {
+  color: white; }
+
+.subtitulo {
+  color: white; }
+
+.subsubtitulo {
+  color: white;
+  text-align: center; }
+
+.titulo, .subtitulo {
+  color: #dfe1e2; }
+
+.subtitulo {
+  color: #dfe1e2; }
+
+.subsubtitulo {
+  color: #dfe1e2;
+  text-align: center; }
+
+.titulo, .subtitulo {
+  color: #aaaaaa; }
+
+.subtitulo {
+  color: #aaaaaa; }
+
+.subsubtitulo {
+  color: #aaaaaa;
+  text-align: center; }
+
+/* EXTEND */
+.titulo, .subtitulo {
+  font-size: 2rem;
+  background-color: none;
+  text-align: center; }
+
+.subtitulo {
+  font-size: 1rem; }
+
+/* MIXINS */
+.card img {
+  width: 100%;
+  height: 100%; }
+
+.navbar img {
+  width: 75px;
+  height: 50px; }
 
 .bg-color {
   background-color: #506adf; }
@@ -44,6 +131,7 @@
   .card:hover img {
     transform: scale(1.1); }
 
+/* MAP GET */
 .whatsapp {
   position: fixed;
   right: 3rem;
@@ -54,9 +142,40 @@
 .navbar-expand-lg .navbar-nav .nav-link {
   color: antiquewhite; }
 
+.btn-primary {
+  background-color: coral;
+  border-color: coral;
+  transition: all 0.25s ease-in-out; }
+
+:not(.btn-check) + .btn:hover {
+  background-color: coral;
+  border-color: coral;
+  transform: scale(0.9); }
+
+.contenedor-contacto {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  background-color: rgba(106, 126, 168, 0.473);
+  backdrop-filter: blur(2px); }
+
+.contenedor__formulario {
+  justify-content: center;
+  text-align: center;
+  width: 40%;
+  columns: 1;
+  margin: 3rem 0; }
+
+.contenedor__articulo {
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  columns: 1;
+  padding: 3rem; }
+
 /* FOOTER */
 .estiloFooter {
-  background-color: #506adf;
+  background-color: rgba(128, 164, 238, 0.466);
   padding: 0.5rem; }
 
 .footerTexto {
@@ -64,9 +183,11 @@
   text-align: justify;
   font-size: 20px; }
 
-.redesFlotantes img {
-  width: 1.5rem;
-  display: inline; }
+.redesFlotantes {
+  right: 3rem;
+  bottom: 1rem; }
+  .redesFlotantes img {
+    width: 1.5rem; }
 
 .textH3 {
   text-align: center;

@@ -1,19 +1,107 @@
 $colorPrincipal:rgb(34, 34, 34);
 $colorSecundario:#506adf;
 $colorLetra:antiquewhite;
+$colorFooter:rgba(128, 164, 238, 0.466);
+$fiesta: principal;
 
 
 
 
-
+@import "variables";
 @import "index";
 @import "contacto";
 @import "productos";
 
+/* CONDICIONALES */
 .body{
-    background-color: $colorPrincipal;
+    @if $fiesta == principal{
+        background-color: $colorPrincipal;
+    } @else if $fiesta == navidad{
+        background-color: red;
+    }@else if $fiesta == pascuas{
+        background-color: pink;
+    } @else if $fiesta == amigo{
+        background-color: blue;
+    } @else{
+        background-color: yellow;
+    }
 }
  
+
+/* BUCLES */
+
+@for $i from 1 through 3 {
+    .item-#{$i}{
+        width: 200px * $i;
+        height: 50px;
+        background-color: coral;
+        border: 1px solid black;
+    }
+}
+
+
+
+/* EACH */
+
+@each $animal in perro, gato, pajaro {
+    .#{animal}{
+        background-image: url("../multimedia/#{animal}.png");
+    }
+}
+
+/* MAPS */
+
+$estilos:(
+    h1: white,
+   h2: rgb(223, 225, 226),
+    h3: rgb(170, 170, 170)
+);
+
+@each $titulos , $color in $estilos {
+    .titulo{
+        color: $color;
+    }
+    .subtitulo{
+        color: $color;
+    }
+
+    .subsubtitulo{
+    color: $color;
+    text-align: center;
+    }
+}
+
+/* EXTEND */
+
+.titulo{
+    font-size: 2rem;
+    background-color:none;
+    text-align: center;
+}
+
+.subtitulo{
+    @extend .titulo;
+    font-size: 1rem;
+}
+
+
+
+
+/* MIXINS */
+
+@mixin sizes($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+} 
+
+.card img{
+    @include sizes(100%,100%)
+}
+
+.navbar img{
+    @include sizes(75px,50px )
+}
+
 .bg-color{
     background-color: $colorSecundario;
 }
@@ -44,10 +132,18 @@ $colorLetra:antiquewhite;
 }
 
 
+/* MAP GET */
+
+$estiloWhatsapp:(
+    posicion:fixed,
+    tamaño:3rem,
+    boton: 1rem
+);
 .whatsapp{
-    position: fixed;
-    right: 3rem;
-    bottom: 1rem;
+    position: map-get($estiloWhatsapp , posicion);
+    right: map-get($estiloWhatsapp,tamaño);
+    bottom: map-get($estiloWhatsapp,boton );
+
     img{
         width: 1.5rem;
     }
@@ -62,10 +158,49 @@ $colorLetra:antiquewhite;
     }
 }
 
+
+.btn-primary{
+    background-color: coral;
+    border-color: coral;
+    transition: all 0.25s ease-in-out;
+}
+
+:not(.btn-check)+.btn:hover{
+    background-color: coral;
+    border-color: coral;
+    transform: scale(0.9);
+}
+
+.contenedor-contacto{
+    margin: 1rem 0;
+    width: 100%;
+    display:flex;
+    background-color: rgba(106, 126, 168, 0.473);
+    backdrop-filter: blur(2px);
+    
+}
+
+.contenedor__formulario {
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    columns: 1;
+    margin: 3rem 0;
+
+}
+.contenedor__articulo {
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    columns: 1;
+    padding: 3rem;    
+}
+
+
                     /* FOOTER */
 
 .estiloFooter{
-    background-color:$colorSecundario;
+    background-color:$colorFooter;
     padding: 0.5rem;
 }
 .footerTexto{
@@ -73,11 +208,15 @@ $colorLetra:antiquewhite;
     text-align: justify;
     font-size: 20px;
 }
-.redesFlotantes img{
-    width: 1.5rem;
-    display:inline;
+.redesFlotantes{
+right: map-get($estiloWhatsapp,tamaño);
+bottom: map-get($estiloWhatsapp,boton );
 
+img{
+    width: 1.5rem;
 }
+}
+
 
 .textH3{
     text-align: center;
