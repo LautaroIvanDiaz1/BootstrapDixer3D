@@ -74,14 +74,14 @@ $estilos:(
 /* EXTEND */
 
 .titulo{
-    font-size: 2rem;
+    font-size: 3rem;
     background-color:none;
     text-align: center;
 }
 
 .subtitulo{
     @extend .titulo;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 
@@ -196,6 +196,11 @@ $estiloWhatsapp:(
     padding: 3rem;    
 }
 
+
+
+.accordion-item{
+    background-color: #506adf;
+}
 
                     /* FOOTER */
 
