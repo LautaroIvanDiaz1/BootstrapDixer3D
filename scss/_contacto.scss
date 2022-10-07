@@ -16,3 +16,30 @@
 /* .configuracion-contacto{
     width: 500px;
 } */
+
+
+.body-foto{
+    background-image:  url("../multimedia/fondoContacto.jpg");
+
+}
+
+.text-color-contacto{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.699);
+}
+
+@media (max-width: 769px){
+.contacto__contenedor {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacto__contenedor {
+    margin: 1rem 0;
+    display: flex;
+    width: 100%;
+}
+.contenedor__articulo {
+    width: 100%;}
+}
+

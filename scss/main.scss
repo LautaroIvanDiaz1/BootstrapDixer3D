@@ -1,7 +1,7 @@
-$colorPrincipal:rgb(34, 34, 34);
-$colorSecundario:#506adf;
+$colorPrincipal:#222222;
+$colorSecundario:#506adf79;
 $colorLetra:antiquewhite;
-$colorFooter:rgba(128, 164, 238, 0.466);
+$colorFooter:rgba(128, 150, 223, 0.39);
 $fiesta: principal;
 
 
@@ -11,6 +11,7 @@ $fiesta: principal;
 @import "index";
 @import "contacto";
 @import "productos";
+@import "novedades";
 
 /* CONDICIONALES */
 .body{
@@ -64,6 +65,9 @@ $estilos:(
     .subtitulo{
         color: $color;
     }
+    .subtitulo1{
+        color:rgba(0, 0, 0, 0.699);
+    }
 
     .subsubtitulo{
     color: $color;
@@ -99,7 +103,11 @@ $estilos:(
 }
 
 .navbar img{
-    @include sizes(75px,50px )
+    @include sizes(50px,50px )
+}
+
+.card-img-top{
+    @include sizes(100%,100% )
 }
 
 .bg-color{
@@ -114,13 +122,7 @@ $estilos:(
  
  }
 
-
- .btn-primary{
-    background-color: $colorSecundario;
-    border-color: $colorSecundario;
- }
-
- .card{
+ .card-efecto{
     
     overflow: hidden;
     img{
@@ -160,8 +162,8 @@ $estiloWhatsapp:(
 
 
 .btn-primary{
-    background-color: coral;
-    border-color: coral;
+    background-color: coral !important;
+    border-color: coral !important;
     transition: all 0.25s ease-in-out;
 }
 
@@ -201,6 +203,13 @@ $estiloWhatsapp:(
 .accordion-item{
     background-color: #506adf;
 }
+
+.cards-wrapper{
+    display: flex;
+}
+
+
+
 
                     /* FOOTER */
 
