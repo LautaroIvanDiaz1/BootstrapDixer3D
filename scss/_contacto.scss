@@ -28,18 +28,63 @@
     color: rgba(0, 0, 0, 0.699);
 }
 
-@media (max-width: 769px){
-.contacto__contenedor {
+@media (max-width: 768px){
+.contenedor__articulo{
+    display: none;
+}
+
+
+.contenedor-contacto {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
 }
-.contacto__contenedor {
+.contenedor-contacto {
     margin: 1rem 0;
     display: flex;
+    width: 100%;}
+
+.contenedor__formulario {
     width: 100%;
 }
-.contenedor__articulo {
-    width: 100%;}
 }
+
+
+.section-contacto{
+    width: 100%;
+    text-align: center;
+    font-size: 2.7rem;
+    margin-top: 5rem;;
+}
+.section-contacto-text{
+    padding: 1rem;
+    background-color:rgba(106, 126, 168, 0.473);
+    backdrop-filter: blur(2px);
+}
+
+.contenedor-contacto{
+    margin: 1rem 0;
+    width: 100%;
+    display:flex;
+    background-color: rgba(106, 126, 168, 0.473);
+    backdrop-filter: blur(2px);
+    
+}
+
+.contenedor__formulario {
+    justify-content: center;
+    text-align: center;
+    width: 45%;
+    columns: 1;
+    margin: 3rem 0;
+
+}
+.contenedor__articulo {
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    columns: 1;
+    padding: 3rem;    
+}
+
 

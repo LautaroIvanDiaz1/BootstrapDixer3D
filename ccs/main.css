@@ -7,6 +7,21 @@
   background-color: #222222;
   border-radius: 6px; }
 
+@media (max-width: 768px) {
+  .carousel-index {
+    width: 100%;
+    height: 100%; }
+  .main_titulo {
+    font-size: 3rem;
+    border-bottom: #506adf solid 1px; }
+  .main_subtitulo {
+    font-size: 1rem; }
+  .pasoApaso {
+    display: none; }
+  .estiloFooter {
+    background-color: rgba(129, 140, 233, 0.589);
+    padding: 0.2rem; } }
+
 .config-imagen-index img {
   width: 100%;
   height: 100%; }
@@ -40,17 +55,51 @@
   text-align: center;
   color: rgba(0, 0, 0, 0.699); }
 
-@media (max-width: 769px) {
-  .contacto__contenedor {
+@media (max-width: 768px) {
+  .contenedor__articulo {
+    display: none; }
+  .contenedor-contacto {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .contacto__contenedor {
+  .contenedor-contacto {
     margin: 1rem 0;
     display: flex;
     width: 100%; }
-  .contenedor__articulo {
+  .contenedor__formulario {
     width: 100%; } }
+
+.section-contacto {
+  width: 100%;
+  text-align: center;
+  font-size: 2.7rem;
+  margin-top: 5rem; }
+
+.section-contacto-text {
+  padding: 1rem;
+  background-color: rgba(106, 126, 168, 0.473);
+  backdrop-filter: blur(2px); }
+
+.contenedor-contacto {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  background-color: rgba(106, 126, 168, 0.473);
+  backdrop-filter: blur(2px); }
+
+.contenedor__formulario {
+  justify-content: center;
+  text-align: center;
+  width: 45%;
+  columns: 1;
+  margin: 3rem 0; }
+
+.contenedor__articulo {
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  columns: 1;
+  padding: 3rem; }
 
 .animacion-productos {
   margin: 3rem 0rem 3rem 0rem;
@@ -59,12 +108,61 @@
   .animacion-productos:hover {
     filter: none; }
 
+.card-efecto {
+  overflow: hidden; }
+  .card-efecto img {
+    transition: all 1s ease; }
+  .card-efecto:hover img {
+    transform: scale(1.1); }
+
+@media (max-width: 768px) {
+  .banner-producto {
+    display: none; }
+  .titulo-producto {
+    font-size: 3rem;
+    align-items: center;
+    color: #b59ae7;
+    border-bottom: #506adf solid 3px; } }
+
 .my-6 {
   margin: 0rem 0 5rem 0; }
+
+.d-flex {
+  color: antiquewhite;
+  font-size: 1.3rem;
+  text-align: justify;
+  margin: 3rem 2rem 3rem 1rem;
+  flex-wrap: wrap; }
+
+@media (max-width: 768px) {
+  .footerTexto {
+    display: none; }
+  .redesFlotantes {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem; }
+  .whatsapp {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem; } }
 
 /* CONDICIONALES */
 .body {
   background-color: #222222; }
+
+.menu {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999; }
+
+/* TARJETAS */
+.card {
+  background-color: beige !important;
+  color: #222222; }
 
 /* BUCLES */
 .item-1 {
@@ -110,16 +208,16 @@
   text-align: center; }
 
 .titulo, .subtitulo {
-  color: #dfe1e2; }
+  color: #f3f3f3; }
 
 .subtitulo {
-  color: #dfe1e2; }
+  color: #f3f3f3; }
 
 .subtitulo1 {
   color: rgba(0, 0, 0, 0.699); }
 
 .subsubtitulo {
-  color: #dfe1e2;
+  color: #f3f3f3;
   text-align: center; }
 
 .titulo, .subtitulo {
@@ -145,7 +243,7 @@
   font-size: 2rem; }
 
 /* MIXINS */
-.card img {
+.imagen-card {
   width: 100%;
   height: 100%; }
 
@@ -163,16 +261,6 @@
 .text-center {
   color: antiquewhite; }
 
-.d-flex {
-  color: antiquewhite; }
-
-.card-efecto {
-  overflow: hidden; }
-  .card-efecto img {
-    transition: all 1s ease; }
-  .card-efecto:hover img {
-    transform: scale(1.1); }
-
 /* MAP GET */
 .whatsapp {
   position: fixed;
@@ -185,35 +273,14 @@
   color: antiquewhite; }
 
 .btn-primary {
-  background-color: coral !important;
-  border-color: coral !important;
+  background-color: #9b92e7 !important;
+  border-color: #9b92e7 !important;
   transition: all 0.25s ease-in-out; }
 
 :not(.btn-check) + .btn:hover {
   background-color: coral;
   border-color: coral;
   transform: scale(0.9); }
-
-.contenedor-contacto {
-  margin: 1rem 0;
-  width: 100%;
-  display: flex;
-  background-color: rgba(106, 126, 168, 0.473);
-  backdrop-filter: blur(2px); }
-
-.contenedor__formulario {
-  justify-content: center;
-  text-align: center;
-  width: 40%;
-  columns: 1;
-  margin: 3rem 0; }
-
-.contenedor__articulo {
-  justify-content: center;
-  text-align: center;
-  width: 50%;
-  columns: 1;
-  padding: 3rem; }
 
 .accordion-item {
   background-color: #506adf; }

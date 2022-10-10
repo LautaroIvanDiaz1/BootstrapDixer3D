@@ -6,3 +6,26 @@
         filter: none;
     }
 }
+.card-efecto{
+    
+    overflow: hidden;
+    img{
+        transition: all 1s ease;
+    }
+    &:hover img{
+        transform: scale(1.1);
+    }
+}
+
+
+@media (max-width: 768px){
+.banner-producto{
+    display: none;
+}
+.titulo-producto{
+    font-size: 3rem;
+    align-items: center;
+    color: rgb(181, 154, 231);
+    border-bottom: $colorSecundario solid 3px;
+}
+}

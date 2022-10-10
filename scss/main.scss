@@ -1,4 +1,5 @@
 $colorPrincipal:#222222;
+$colorMenu:#506adf;
 $colorSecundario:#506adf79;
 $colorLetra:antiquewhite;
 $colorFooter:rgba(128, 150, 223, 0.39);
@@ -12,6 +13,26 @@ $fiesta: principal;
 @import "contacto";
 @import "productos";
 @import "novedades";
+@import "sobre_nosotros";
+
+
+@media (max-width: 768px){
+.footerTexto{
+    display: none;
+}
+.redesFlotantes{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem;
+}
+.whatsapp{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem;
+}
+}
 
 /* CONDICIONALES */
 .body{
@@ -27,7 +48,20 @@ $fiesta: principal;
         background-color: yellow;
     }
 }
+
+.menu{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
  
+/* TARJETAS */
+.card{
+    background-color:beige !important;
+    color: #222222;
+}
 
 /* BUCLES */
 
@@ -54,7 +88,7 @@ $fiesta: principal;
 
 $estilos:(
     h1: white,
-   h2: rgb(223, 225, 226),
+   h2: rgb(243, 243, 243),
     h3: rgb(170, 170, 170)
 );
 
@@ -98,7 +132,7 @@ $estilos:(
     height: $alto;
 } 
 
-.card img{
+.imagen-card{
     @include sizes(100%,100%)
 }
 
@@ -111,27 +145,14 @@ $estilos:(
 }
 
 .bg-color{
-    background-color: $colorSecundario;
+    background-color:$colorMenu;
 }
 
 .text-center{
     color: $colorLetra;
  }
- .d-flex {
-     color: $colorLetra;
- 
- }
 
- .card-efecto{
-    
-    overflow: hidden;
-    img{
-        transition: all 1s ease;
-    }
-    &:hover img{
-        transform: scale(1.1);
-    }
-}
+
 
 
 /* MAP GET */
@@ -152,6 +173,7 @@ $estiloWhatsapp:(
 }
 
 
+
 .navbar-expand-lg{
      .navbar-nav{ 
             .nav-link {
@@ -162,8 +184,8 @@ $estiloWhatsapp:(
 
 
 .btn-primary{
-    background-color: coral !important;
-    border-color: coral !important;
+    background-color: rgb(155, 146, 231) !important;
+    border-color: rgb(155, 146, 231)!important;
     transition: all 0.25s ease-in-out;
 }
 
@@ -173,30 +195,7 @@ $estiloWhatsapp:(
     transform: scale(0.9);
 }
 
-.contenedor-contacto{
-    margin: 1rem 0;
-    width: 100%;
-    display:flex;
-    background-color: rgba(106, 126, 168, 0.473);
-    backdrop-filter: blur(2px);
-    
-}
 
-.contenedor__formulario {
-    justify-content: center;
-    text-align: center;
-    width: 40%;
-    columns: 1;
-    margin: 3rem 0;
-
-}
-.contenedor__articulo {
-    justify-content: center;
-    text-align: center;
-    width: 50%;
-    columns: 1;
-    padding: 3rem;    
-}
 
 
 
