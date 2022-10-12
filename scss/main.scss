@@ -40,49 +40,16 @@ $fiesta: principal;
         background-color: $colorPrincipal;
     } @else if $fiesta == navidad{
         background-color: red;
-    }@else if $fiesta == pascuas{
-        background-color: pink;
-    } @else if $fiesta == amigo{
-        background-color: blue;
-    } @else{
-        background-color: yellow;
+        color: green;
     }
 }
 
-.menu{
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-}
- 
 /* TARJETAS */
 .card{
     background-color:beige !important;
     color: #222222;
 }
 
-/* BUCLES */
-
-@for $i from 1 through 3 {
-    .item-#{$i}{
-        width: 200px * $i;
-        height: 50px;
-        background-color: coral;
-        border: 1px solid black;
-    }
-}
-
-
-
-/* EACH */
-
-@each $animal in perro, gato, pajaro {
-    .#{animal}{
-        background-image: url("../multimedia/#{animal}.png");
-    }
-}
 
 /* MAPS */
 
@@ -143,6 +110,18 @@ $estilos:(
 .card-img-top{
     @include sizes(100%,100% )
 }
+.carousel-index{
+    @include sizes(100%,100% )
+}
+.carousel_sobre{
+    @include sizes(100%,100% )
+}
+.carousel-novedades{
+    @include sizes(100%,100% ) 
+}
+.banner-producto{
+    @include sizes(100%,100% )  
+}
 
 .bg-color{
     background-color:$colorMenu;
@@ -159,7 +138,7 @@ $estilos:(
 
 $estiloWhatsapp:(
     posicion:fixed,
-    tamaño:3rem,
+    tamaño:2.5rem,
     boton: 1rem
 );
 .whatsapp{

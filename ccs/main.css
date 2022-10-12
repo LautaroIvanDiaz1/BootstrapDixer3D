@@ -7,6 +7,12 @@
   background-color: #222222;
   border-radius: 6px; }
 
+.carousel-index {
+  width: 100%;
+  height: 100%; }
+  .carousel-index img {
+    margin-top: -5rem; }
+
 @media (max-width: 768px) {
   .carousel-index {
     width: 100%;
@@ -67,7 +73,7 @@
     display: flex;
     width: 100%; }
   .contenedor__formulario {
-    width: 100%; } }
+    width: 45%; } }
 
 .section-contacto {
   width: 100%;
@@ -101,6 +107,12 @@
   columns: 1;
   padding: 3rem; }
 
+.banner-producto {
+  width: 100%;
+  height: 100%; }
+  .banner-producto img {
+    margin-top: -5rem; }
+
 .animacion-productos {
   margin: 3rem 0rem 3rem 0rem;
   transform: translateZ(1rem);
@@ -117,15 +129,30 @@
 
 @media (max-width: 768px) {
   .banner-producto {
-    display: none; }
+    width: 100%;
+    height: 100%; }
   .titulo-producto {
     font-size: 3rem;
     align-items: center;
     color: #b59ae7;
     border-bottom: #506adf solid 3px; } }
 
-.my-6 {
-  margin: 0rem 0 5rem 0; }
+.menu {
+  width: 100%;
+  height: 100%; }
+  .menu img {
+    margin-top: -5rem; }
+
+@media (max-width: 768px) {
+  .carousel-novedades {
+    width: 100%;
+    height: 100%; } }
+
+.carousel_sobre {
+  width: 100%;
+  height: 100%; }
+  .carousel_sobre img {
+    margin-top: -5rem; }
 
 .d-flex {
   color: antiquewhite;
@@ -152,46 +179,10 @@
 .body {
   background-color: #222222; }
 
-.menu {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999; }
-
 /* TARJETAS */
 .card {
   background-color: beige !important;
   color: #222222; }
-
-/* BUCLES */
-.item-1 {
-  width: 200px;
-  height: 50px;
-  background-color: coral;
-  border: 1px solid black; }
-
-.item-2 {
-  width: 400px;
-  height: 50px;
-  background-color: coral;
-  border: 1px solid black; }
-
-.item-3 {
-  width: 600px;
-  height: 50px;
-  background-color: coral;
-  border: 1px solid black; }
-
-/* EACH */
-.animal {
-  background-image: url("../multimedia/animal.png"); }
-
-.animal {
-  background-image: url("../multimedia/animal.png"); }
-
-.animal {
-  background-image: url("../multimedia/animal.png"); }
 
 /* MAPS */
 .titulo, .subtitulo {
@@ -255,6 +246,22 @@
   width: 100%;
   height: 100%; }
 
+.carousel-index {
+  width: 100%;
+  height: 100%; }
+
+.carousel_sobre {
+  width: 100%;
+  height: 100%; }
+
+.carousel-novedades {
+  width: 100%;
+  height: 100%; }
+
+.banner-producto {
+  width: 100%;
+  height: 100%; }
+
 .bg-color {
   background-color: #506adf; }
 
@@ -264,7 +271,7 @@
 /* MAP GET */
 .whatsapp {
   position: fixed;
-  right: 3rem;
+  right: 2.5rem;
   bottom: 1rem; }
   .whatsapp img {
     width: 1.5rem; }
@@ -299,7 +306,7 @@
   font-size: 20px; }
 
 .redesFlotantes {
-  right: 3rem;
+  right: 2.5rem;
   bottom: 1rem; }
   .redesFlotantes img {
     width: 1.5rem; }
