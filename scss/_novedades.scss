@@ -1,9 +1,22 @@
-.menu{
+.carousel-novedades{
   width: 100%;
-  height: 100%;
+  height: 30%;
+  position: relative;
 img{
-  margin-top: -5rem;
+  width: 100%;
+  height: 30%;
 }
+
+}
+
+.carousel-novedades p{
+  font-size: 4rem;
+  color:rgba(48, 48, 48, 0.932);
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  font-family: 'Anton', sans-serif;
+
 }
 
 
@@ -13,7 +26,48 @@ img{
 @media (max-width: 768px){
   .carousel-novedades{
     width: 100%;
-    height: 100%;
+    height: 30%;
+    position: relative;
+  img{
+    width: 100%;
+    height: 30%;
+  }
+  
+  }
+  
+  .carousel-novedades p{
+    font-size: 2.5rem;
+    color:rgba(48, 48, 48, 0.932);
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-family: 'Anton', sans-serif;
+  
+  }
+
+}
+
+
+@media (max-width: 430px){
+  .carousel-novedades{
+    width: 100%;
+    height: 30%;
+    position: relative;
+  img{
+    width: 100%;
+    height: 30%;
+  }
+  
+  }
+  
+  .carousel-novedades p{
+    font-size: 1.5rem;
+    color:rgba(48, 48, 48, 0.932);
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-family: 'Anton', sans-serif;
+  
   }
 
 }

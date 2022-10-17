@@ -44,6 +44,10 @@ $fiesta: principal;
     }
 }
 
+.nav-item{
+--clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
 /* TARJETAS */
 .card{
     background-color:beige !important;
@@ -88,9 +92,6 @@ $estilos:(
     @extend .titulo;
     font-size: 2rem;
 }
-
-
-
 
 /* MIXINS */
 
@@ -175,9 +176,6 @@ $estiloWhatsapp:(
 }
 
 
-
-
-
 .accordion-item{
     background-color: #506adf;
 }
@@ -185,8 +183,6 @@ $estiloWhatsapp:(
 .cards-wrapper{
     display: flex;
 }
-
-
 
 
                     /* FOOTER */
@@ -203,12 +199,10 @@ $estiloWhatsapp:(
 .redesFlotantes{
 right: map-get($estiloWhatsapp,tamaño);
 bottom: map-get($estiloWhatsapp,boton );
-
 img{
     width: 1.5rem;
 }
 }
-
 
 .textH3{
     text-align: center;
