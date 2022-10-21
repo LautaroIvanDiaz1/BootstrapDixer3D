@@ -55,6 +55,7 @@ $fiesta: principal;
 }
 
 
+
 /* MAPS */
 
 $estilos:(
@@ -133,7 +134,9 @@ $estilos:(
  }
 
 
-
+.my-6{
+    margin: 0 4rem 0 2 rem;
+}
 
 /* MAP GET */
 
@@ -147,8 +150,10 @@ $estiloWhatsapp:(
     right: map-get($estiloWhatsapp,tamaño);
     bottom: map-get($estiloWhatsapp,boton );
 
-    img{
-        width: 1.5rem;
+    svg{
+        width: 3rem;
+        height: 3rem;
+        color: rgb(56, 233, 40);
     }
 }
 
@@ -191,6 +196,7 @@ $estiloWhatsapp:(
     background-color:$colorFooter;
     padding: 0.5rem;
 }
+
 .footerTexto{
     color: antiquewhite;
     text-align: justify;
@@ -199,10 +205,24 @@ $estiloWhatsapp:(
 .redesFlotantes{
 right: map-get($estiloWhatsapp,tamaño);
 bottom: map-get($estiloWhatsapp,boton );
-img{
-    width: 1.5rem;
+svg{
+    width: 2rem;
+    height: 2rem;
+    color: rgb(212, 44, 72);
+
 }
 }
+
+.redesFlotantes1{
+    right: map-get($estiloWhatsapp,tamaño);
+    svg{
+        margin:0.2rem;
+        width: 2rem;
+        height: 2rem;
+        color: rgb(255, 255, 255);
+    
+    }
+    }
 
 .textH3{
     text-align: center;

@@ -18,10 +18,27 @@ height: 30%;
     font-size: 3.5rem;
     color:rgba(255, 255, 255, 0.932);
     position: absolute;
-    top: 25%;
-    left: 40%;
+    top: 40%;
+    left: 15%;
     font-family: 'Anton', sans-serif;
 
+}
+
+
+.card-pasoApaso{
+    background-color: aliceblue;
+    text-align: center;
+    border: 3px solid $colorMenu;
+    border-radius: 0.7rem;
+    img{
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    filter: brightness(80%);
+    border-bottom: 3px solid $colorMenu
+    }
 }
 
 @media (max-width: 768px){
