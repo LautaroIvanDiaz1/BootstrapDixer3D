@@ -70,28 +70,18 @@
         <article class="contenedor__formulario">
             <h3 class="subtitulo1">Contactate con nosotros</h3>
             <div>
+                <form>
+                    <input class="form-control my-3" placeholder="Ingrese nombre completo" id="nombre" type="text" name="nombre"/>
+                   
+                    <input class="form-control my-3" placeholder="Ingrese apellido" id="nombre" type="text" name="apellido"/>
+                    
+                    <input class="form-control my-3" placeholder="Ingrese telefono" id="telefono" type="number" name="telefono"/>
 
-                <div class="my-3">
-                    <input type="text" class="form-control" placeholder="Ingrese nombre completo" required>
-                </div>
-
-                <div class="my-3">
-                    <input type="text" class="form-control" placeholder="Ingrese su apellido" required>
-                </div>
-
-                <div class="my-3 ">
-                    <input type="number" class="form-control" placeholder="Ingrese su telefono" spellcheck="true">
-                </div>
-
-                <div class="my-3">
-                    <textarea class="form-control" placeholder="Escriba su consulta aqui" id="floatingTextarea2"
+                    <textarea class="form-control my-3" placeholder="Escriba su consulta aqui" id="floatingTextarea2"
                         style="height: 300px"></textarea>
-                    <label for="floatingTextarea2"></label>
-                </div>
-                <div class="my3">
-                    <button type="button" class="btn btn-primary">Enviar consulta</button>
-                </div>
-
+                   
+                    <button type="submit" class="btn btn-primary my-3">Enviar</button>
+                  </form>
             </div>
         </article>
     </section>

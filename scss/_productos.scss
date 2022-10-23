@@ -19,14 +19,39 @@
   
   }
 
+.card-productos{
+  background-color: aliceblue;
+  text-align: center;
+  border: 3px solid $colorMenu;
+  border-radius: 1.5rem;
+  img{
+  align-items: center;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  width: 255px;
+  height: 150px;
+  object-fit: cover;
+  filter: brightness(80%);
+  border-bottom: 3px solid $colorMenu
+  }
+  p {
+    color: black;
+  }
+  h5{
+    margin: 1rem;
+    color: black;
+  }
+}
+
 .animacion-productos{
     margin: 3rem 0rem 3rem 0rem;
-    transform: translateZ(1rem);
+    transform: translateZ(1.5rem);
     filter:contrast(80%);
     &:hover{
         filter: none;
     }
 }
+
 .card-efecto{
     
     overflow: hidden;

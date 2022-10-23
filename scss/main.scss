@@ -50,7 +50,7 @@ $fiesta: principal;
 
 /* TARJETAS */
 .card{
-    background-color:beige !important;
+    background-color:aliceblue !important;
     color: #222222;
 }
 
@@ -151,8 +151,8 @@ $estiloWhatsapp:(
     bottom: map-get($estiloWhatsapp,boton );
 
     svg{
-        width: 3rem;
-        height: 3rem;
+        width: 2rem;
+        height: 2rem;
         color: rgb(56, 233, 40);
     }
 }
@@ -206,19 +206,20 @@ $estiloWhatsapp:(
 right: map-get($estiloWhatsapp,tamaño);
 bottom: map-get($estiloWhatsapp,boton );
 svg{
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     color: rgb(212, 44, 72);
 
 }
 }
 
 .redesFlotantes1{
+    bottom: map-get($estiloWhatsapp,boton);
     right: map-get($estiloWhatsapp,tamaño);
     svg{
-        margin:0.2rem;
-        width: 2rem;
-        height: 2rem;
+        margin:0.17rem;
+        width: 1.5rem;
+        height: 1.5rem;
         color: rgb(255, 255, 255);
     
     }
