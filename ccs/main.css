@@ -13,11 +13,14 @@
 
 .carousel-index p {
   font-size: 3.5rem;
-  color: rgba(255, 255, 255, 0.932);
+  color: rgba(29, 29, 29, 0.897);
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 15%;
   font-family: 'Anton', sans-serif; }
+
+.pasoApaso {
+  padding-top: 5rem; }
 
 .card-pasoApaso {
   background-color: aliceblue;
@@ -25,6 +28,7 @@
   border: 3px solid #506adf;
   border-radius: 0.7rem; }
   .card-pasoApaso img {
+    margin-top: 1rem;
     border-top-left-radius: 0.7rem;
     border-top-right-radius: 0.7rem;
     width: 250px;
@@ -45,10 +49,10 @@
       height: 30%; }
   .carousel-index p {
     font-size: 1.7rem;
-    color: rgba(255, 255, 255, 0.932);
+    color: rgba(29, 29, 29, 0.897);
     position: absolute;
-    top: 25%;
-    left: 40%;
+    top: 40%;
+    left: 15%;
     font-family: 'Anton', sans-serif; }
   .diseño_especialidad {
     flex-direction: column;
@@ -64,7 +68,8 @@
     height: 100%; }
   .main_titulo {
     font-size: 3rem;
-    border-bottom: #506adf solid 1px; }
+    border-bottom: #506adf solid 1px;
+    padding: 1rem; }
   .main_subtitulo {
     font-size: 1rem; }
   .pasoApaso {
@@ -85,7 +90,7 @@
       height: 30%; }
   .carousel-index p {
     font-size: 1.3rem;
-    color: rgba(255, 255, 255, 0.932);
+    color: rgba(29, 29, 29, 0.897);
     position: absolute;
     top: 25%;
     left: 40%;
@@ -134,6 +139,36 @@
   text-align: center;
   color: rgba(0, 0, 0, 0.699); }
 
+.text-color-contacto1 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.699); }
+  .text-color-contacto1 p {
+    text-align: center;
+    flex-wrap: wrap; }
+  .text-color-contacto1 h4 {
+    background-color: rgba(37, 36, 36, 0.699);
+    border-radius: 3rem; }
+
+.boton-contacto {
+  color: white;
+  background-color: #c2beeb;
+  border-radius: 0.7rem;
+  border: 2px solid #c2beeb;
+  margin: 0.2rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none; }
+  .boton-contacto svg {
+    margin-left: 0.10rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white; }
+
+.boton-contacto:hover {
+  border-color: #9b92e7;
+  color: #fff;
+  box-shadow: inset 0 -3.25em 0 0 #9b92e7; }
+
 @media (max-width: 768px) {
   .contenedor__articulo {
     display: none; }
@@ -145,6 +180,18 @@
     margin: 1rem 0;
     display: flex;
     width: 100%; }
+  .contenedor__formulario {
+    width: 45%; } }
+
+@media (max-width: 430px) {
+  .contenedor__articulo {
+    display: none; }
+  .contenedor-contacto {
+    width: 100%; }
+  .contenedor-contacto {
+    margin: 1rem 0;
+    display: flex;
+    width: 55%; }
   .contenedor__formulario {
     width: 45%; } }
 
@@ -190,9 +237,9 @@
 
 .banner-producto p {
   font-size: 4rem;
-  color: rgba(255, 255, 255, 0.897);
+  color: rgba(29, 29, 29, 0.897);
   position: absolute;
-  top: 25%;
+  top: 40%;
   left: 25%;
   font-family: 'Anton', sans-serif; }
 
@@ -200,7 +247,8 @@
   background-color: aliceblue;
   text-align: center;
   border: 3px solid #506adf;
-  border-radius: 1.5rem; }
+  border-radius: 1.5rem;
+  padding: 0.9rem; }
   .card-productos img {
     align-items: center;
     border-top-left-radius: 0.7rem;
@@ -223,6 +271,25 @@
   .animacion-productos:hover {
     filter: none; }
 
+.boton-productos {
+  color: white;
+  background-color: #aca8d8;
+  border-radius: 0.7rem;
+  border: 2px solid #aca8d8;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  text-decoration: none; }
+  .boton-productos svg {
+    margin-left: 0.10rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white; }
+
+.boton-productos:hover {
+  border-color: #9b92e7;
+  color: #fff;
+  box-shadow: inset 0 -3.25em 0 0 #9b92e7; }
+
 .card-efecto {
   overflow: hidden; }
   .card-efecto img {
@@ -240,7 +307,7 @@
       height: 30%; }
   .banner-producto p {
     font-size: 2rem;
-    color: rgba(255, 255, 255, 0.897);
+    color: rgba(29, 29, 29, 0.897);
     position: absolute;
     top: 25%;
     left: 20%;
@@ -261,7 +328,7 @@
       height: 30%; }
   .banner-producto p {
     font-size: 1.7rem;
-    color: rgba(255, 255, 255, 0.897);
+    color: rgba(29, 29, 29, 0.897);
     position: absolute;
     top: 30%;
     left: 5%;
@@ -282,14 +349,13 @@
 
 .carousel-novedades p {
   font-size: 4rem;
-  color: rgba(48, 48, 48, 0.932);
+  color: rgba(29, 29, 29, 0.897);
   position: absolute;
   top: 40%;
   left: 30%;
   font-family: 'Anton', sans-serif; }
 
 .boton-animacion {
-  align-content: center;
   color: white;
   background-color: #c2beeb;
   border-radius: 0.7rem;
@@ -329,7 +395,7 @@
       height: 30%; }
   .carousel-novedades p {
     font-size: 2.5rem;
-    color: rgba(48, 48, 48, 0.932);
+    color: rgba(29, 29, 29, 0.897);
     position: absolute;
     top: 40%;
     left: 20%;
@@ -345,7 +411,7 @@
       height: 30%; }
   .carousel-novedades p {
     font-size: 1.5rem;
-    color: rgba(48, 48, 48, 0.932);
+    color: rgba(29, 29, 29, 0.897);
     position: absolute;
     top: 40%;
     left: 20%;
@@ -364,17 +430,28 @@ body {
 
 .carousel_sobre p {
   font-size: 4rem;
-  color: rgba(255, 255, 255, 0.932);
+  color: rgba(29, 29, 29, 0.897);
   position: absolute;
   top: 30%;
   left: 20%;
   font-family: 'Anton', sans-serif; }
 
-.tarjetas-presentacion p {
-  text-align: center; }
-
-.tarjetas-presentacion h2 {
-  text-align: center; }
+.tarjetas-presentacion {
+  background-color: aliceblue;
+  text-align: center;
+  border: 3px solid #506adf;
+  border-radius: 1rem; }
+  .tarjetas-presentacion img {
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    margin: 0.2rem; }
+  .tarjetas-presentacion p {
+    color: black;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0.5rem; }
 
 .d-flex {
   color: antiquewhite;
@@ -385,6 +462,8 @@ body {
   flex-wrap: wrap; }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden; }
   .carousel-sobre {
     width: 100%;
     height: 30%;
@@ -397,7 +476,7 @@ body {
     height: 150px; }
   .carousel_sobre p {
     font-size: 3rem;
-    color: rgba(255, 255, 255, 0.932);
+    color: rgba(29, 29, 29, 0.897);
     position: absolute;
     top: 30%;
     left: 25%;
@@ -406,9 +485,25 @@ body {
     width: 300px;
     height: 200px; }
   .foto_impresoras {
-    display: none; } }
+    display: none; }
+  .tarjetas-presentacion {
+    justify-content: center;
+    background-color: aliceblue;
+    text-align: center;
+    border: 3px solid #506adf;
+    border-radius: 1rem; }
+    .tarjetas-presentacion img {
+      width: 400px;
+      height: 400px; }
+    .tarjetas-presentacion p {
+      color: black;
+      text-align: center;
+      flex-wrap: wrap;
+      margin: 0.5rem; } }
 
 @media (max-width: 430px) {
+  body {
+    overflow-x: hidden; }
   .carousel-sobre {
     width: 100%;
     height: 30%;
@@ -433,7 +528,22 @@ body {
     .tarjetas-presentacion p {
       text-align: center; }
     .tarjetas-presentacion h2 {
-      text-align: center; } }
+      text-align: center; }
+  .tarjetas-presentacion {
+    background-color: aliceblue;
+    text-align: center;
+    border: 3px solid #506adf;
+    border-radius: 1rem; }
+    .tarjetas-presentacion img {
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 300px; }
+    .tarjetas-presentacion p {
+      color: black;
+      text-align: center;
+      flex-wrap: wrap;
+      margin: 0.5rem; } }
 
 @media (max-width: 768px) {
   .footerTexto {
@@ -442,7 +552,7 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin: 0.2rem; }
+    margin-top: 1rem; }
   .whatsapp {
     display: grid;
     justify-content: center;
@@ -554,12 +664,15 @@ body {
   right: 2.5rem;
   bottom: 1rem; }
   .whatsapp svg {
-    width: 2rem;
-    height: 2rem;
-    color: #38e928; }
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #32ee32;
+    border-radius: 0.8rem;
+    color: white; }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: antiquewhite; }
+  color: antiquewhite;
+  margin-left: 0.2rem; }
 
 .btn-primary {
   background-color: #9b92e7 !important;
@@ -579,30 +692,37 @@ body {
 
 /* FOOTER */
 .estiloFooter {
-  background-color: rgba(128, 150, 223, 0.39);
-  padding: 0.5rem; }
+  background-color: rgba(128, 150, 223, 0.863);
+  padding: 0.2rem; }
 
 .footerTexto {
   color: antiquewhite;
   text-align: justify;
-  font-size: 20px; }
+  font-size: 1.3rem;
+  margin-left: 0.3rem; }
 
 .redesFlotantes {
   right: 2.5rem;
-  bottom: 1rem; }
+  bottom: 1rem;
+  margin-bottom: 0.7rem;
+  margin-left: 0.3rem; }
   .redesFlotantes svg {
     width: 1.5rem;
     height: 1.5rem;
-    color: #d42c48; }
+    border-radius: 0.5rem;
+    background-color: #d42c48;
+    color: white; }
 
 .redesFlotantes1 {
   bottom: 1rem;
   right: 2.5rem; }
   .redesFlotantes1 svg {
-    margin: 0.17rem;
+    margin-left: 0.10rem;
     width: 1.5rem;
     height: 1.5rem;
-    color: white; }
+    border-radius: 1.2rem;
+    background-color: white;
+    color: #2b2bec; }
 
 .textH3 {
   text-align: center;

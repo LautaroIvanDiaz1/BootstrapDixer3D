@@ -15,20 +15,30 @@ body{
   
   .carousel_sobre p {
     font-size: 4rem;
-    color: rgba(255, 255, 255, 0.932);
+    color: rgba(29, 29, 29, 0.897);
     position: absolute;
     top: 30%;
     left: 20%;
     font-family: 'Anton', sans-serif;
 
 }
-.tarjetas-presentacion {
-    p{
-        text-align: center;
-    }
-    h2{
-        text-align: center;
-    }
+.tarjetas-presentacion{
+    background-color: aliceblue;
+    text-align: center;
+    border: 3px solid $colorMenu;
+    border-radius: 1rem;
+img{
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    margin: 0.2rem;}
+p{
+    color: black;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+}
 }
 
 
@@ -43,6 +53,9 @@ body{
 
 
 @media (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
 .carousel-sobre{
     width: 100%;
     height: 30%;
@@ -62,7 +75,7 @@ body{
   }
   .carousel_sobre p {
     font-size: 3rem;
-    color: rgba(255, 255, 255, 0.932);
+    color: rgba(29, 29, 29, 0.897);
     position: absolute;
     top: 30%;
     left: 25%;
@@ -78,11 +91,31 @@ body{
     display: none;
 }
 
+.tarjetas-presentacion{
+    justify-content: center;
+    background-color: aliceblue;
+    text-align: center;
+    border: 3px solid $colorMenu;
+    border-radius: 1rem;
+img{
+    width: 400px;
+    height: 400px;}
+p{
+    color: black;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+}
+}
+
 
 }
 
 
 @media (max-width: 430px){
+    body{
+        overflow-x: hidden;
+    }
     .carousel-sobre{
         width: 100%;
         height: 30%;
@@ -120,6 +153,24 @@ body{
         h2{
             text-align: center;
         }
+    }
+
+    .tarjetas-presentacion{
+        background-color: aliceblue;
+        text-align: center;
+        border: 3px solid $colorMenu;
+        border-radius: 1rem;
+    img{
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;}
+    p{
+        color: black;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 0.5rem;
+    }
     }
     
     }

@@ -16,12 +16,16 @@ height: 30%;
 
 .carousel-index p{
     font-size: 3.5rem;
-    color:rgba(255, 255, 255, 0.932);
+    color:rgba(29, 29, 29, 0.897);
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 15%;
     font-family: 'Anton', sans-serif;
 
+}
+
+.pasoApaso{
+    padding-top: 5rem;
 }
 
 
@@ -31,6 +35,7 @@ height: 30%;
     border: 3px solid $colorMenu;
     border-radius: 0.7rem;
     img{
+    margin-top: 1rem;
     border-top-left-radius: 0.7rem;
     border-top-right-radius: 0.7rem;
     width: 250px;
@@ -58,10 +63,10 @@ height: 30%;
 
     .carousel-index p{
         font-size: 1.7rem;
-        color:rgba(255, 255, 255, 0.932);
+        color:rgba(29, 29, 29, 0.897);
         position: absolute;
-        top: 25%;
-        left: 40%;
+        top: 40%;
+        left: 15%;
         font-family: 'Anton', sans-serif;
     
     }
@@ -84,6 +89,7 @@ height: 30%;
     .main_titulo{
         font-size: 3rem;
         border-bottom: $colorSecundario solid 1px;
+        padding:1rem;
     }
     .main_subtitulo{
         font-size: 1rem;
@@ -116,7 +122,7 @@ height: 30%;
 
     .carousel-index p{
         font-size: 1.3rem;
-        color:rgba(255, 255, 255, 0.932);
+        color:rgba(29, 29, 29, 0.897);
         position: absolute;
         top: 25%;
         left: 40%;

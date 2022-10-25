@@ -2,7 +2,7 @@ $colorPrincipal:#222222;
 $colorMenu:#506adf;
 $colorSecundario:#506adf79;
 $colorLetra:antiquewhite;
-$colorFooter:rgba(128, 150, 223, 0.39);
+$colorFooter:rgba(128, 150, 223, 0.863);
 $fiesta: principal;
 
 
@@ -24,7 +24,7 @@ $fiesta: principal;
     display: grid;
     justify-content: center;
     align-items: center;
-    margin: 0.2rem;
+    margin-top: 1rem;
 }
 .whatsapp{
     display: grid;
@@ -53,9 +53,6 @@ $fiesta: principal;
     background-color:aliceblue !important;
     color: #222222;
 }
-
-
-
 /* MAPS */
 
 $estilos:(
@@ -151,9 +148,11 @@ $estiloWhatsapp:(
     bottom: map-get($estiloWhatsapp,boton );
 
     svg{
-        width: 2rem;
-        height: 2rem;
-        color: rgb(56, 233, 40);
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: rgb(50, 238, 50);
+        border-radius:0.8rem ;
+        color:white;
     }
 }
 
@@ -163,6 +162,7 @@ $estiloWhatsapp:(
      .navbar-nav{ 
             .nav-link {
     color: antiquewhite;
+    margin-left: 0.2rem;
         }
     }
 }
@@ -194,21 +194,26 @@ $estiloWhatsapp:(
 
 .estiloFooter{
     background-color:$colorFooter;
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 
 .footerTexto{
     color: antiquewhite;
     text-align: justify;
-    font-size: 20px;
+    font-size: 1.3rem;
+    margin-left: 0.3rem;
 }
 .redesFlotantes{
 right: map-get($estiloWhatsapp,tamaño);
 bottom: map-get($estiloWhatsapp,boton );
+margin-bottom: 0.7rem;
+margin-left: 0.3rem;
 svg{
     width: 1.5rem;
     height: 1.5rem;
-    color: rgb(212, 44, 72);
+    border-radius: 0.5rem;
+    background-color:rgb(212, 44, 72) ;
+    color: white;
 
 }
 }
@@ -217,10 +222,12 @@ svg{
     bottom: map-get($estiloWhatsapp,boton);
     right: map-get($estiloWhatsapp,tamaño);
     svg{
-        margin:0.17rem;
+        margin-left:0.10rem;
         width: 1.5rem;
         height: 1.5rem;
-        color: rgb(255, 255, 255);
+        border-radius: 1.2rem;
+        background-color:rgb(255, 255, 255);
+        color: rgb(43, 43, 236);
     
     }
     }

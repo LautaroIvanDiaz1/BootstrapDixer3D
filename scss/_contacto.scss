@@ -22,12 +22,48 @@
     color: rgba(0, 0, 0, 0.699);
 }
 
+.text-color-contacto1{
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.699);
+    p{
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    h4{
+        background-color: rgba(37, 36, 36, 0.699);
+        border-radius: 3rem ;
+    }
+}
+
+.boton-contacto{
+    color:white;
+    background-color:rgb(194, 190, 235);
+      border-radius: 0.7rem;
+      border: 2px solid rgb(194, 190, 235);
+      margin: 0.2rem;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+
+svg{
+    margin-left:0.10rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: rgb(255, 255, 255);
+
+      }
+  }
+  
+  .boton-contacto:hover {
+    border-color: rgb(155, 146, 231);
+      color: #fff;
+      box-shadow: inset 0 -3.25em 0 0 rgb(155, 146, 231);
+  }
+
 @media (max-width: 768px){
 .contenedor__articulo{
     display: none;
 }
-
-
 .contenedor-contacto {
     flex-direction: column;
     justify-content: center;
@@ -43,6 +79,22 @@
 }
 }
 
+@media (max-width: 430px){
+    .contenedor__articulo{
+        display: none;
+    }
+    .contenedor-contacto {
+       width: 100%;
+    }
+    .contenedor-contacto {
+        margin: 1rem 0;
+        display: flex;
+        width: 55%;}
+    
+     .contenedor__formulario {
+        width: 45%;
+    }
+}
 
 .section-contacto{
     width: 100%;
