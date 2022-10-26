@@ -9,6 +9,18 @@ img{
 
 }
 
+.accordion-button {        
+  background-color:black;
+  height: 30px;
+  color:rgb(177, 177, 211);   
+}
+
+.accordion-body{
+  color: black;
+  padding: 8px 12px;
+  background-color:rgb(194, 190, 235); 
+}
+
 .carousel-novedades p{
   font-size: 4rem;
   color:rgba(29, 29, 29, 0.897);

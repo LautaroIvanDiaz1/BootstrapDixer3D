@@ -347,6 +347,16 @@
     width: 100%;
     height: 30%; }
 
+.accordion-button {
+  background-color: black;
+  height: 30px;
+  color: #b1b1d3; }
+
+.accordion-body {
+  color: black;
+  padding: 8px 12px;
+  background-color: #c2beeb; }
+
 .carousel-novedades p {
   font-size: 4rem;
   color: rgba(29, 29, 29, 0.897);
